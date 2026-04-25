@@ -212,7 +212,7 @@ body::before {
   border: 1px solid #2f3745;
   border-radius: 12px;
   background: rgba(14, 18, 24, 0.64);
-  padding: 14px;
+  padding: 14px 14px calc(28px + env(safe-area-inset-bottom));
   overflow: auto;
 }
 

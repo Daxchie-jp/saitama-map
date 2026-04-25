@@ -28,33 +28,33 @@
     },
     categoryTracks: {
       1: [
-        "Track.01 Crossing a River - kawagoe",
-        "Track.02 Narrow Mountain - Sayama -"
+        "Track.01 Crossing a River - 川越 -",
+        "Track.02 Narrow Mountain - 狭山 -"
       ],
       2: [
-        "Track.01 Rice Ability  - Hanno -",
-        "Track.02 Sun High - Hidaka -",
-        "Track.03 Place with a Swamp - Tokorozawa -"
+        "Track.01 Rice Ability  - 飯能 -",
+        "Track.02 Sun High - 日高 -",
+        "Track.03 Place with a Swamp - 所沢 -"
       ],
       3: [
-        "Track.01 Entry Space  - Iruma -",
-        "Track.02 Carane Island - Tsurugashima -",
-        "Track.03 Order and Father - Chichibu -"
+        "Track.01 Entry Space  - 入間 -",
+        "Track.02 Carane Island - 鶴ヶ島 -",
+        "Track.03 Order and Father - 秩父 -"
       ],
       4: [
-        "Track.01 Morning Haze - Asaka -",
-        "Track.02 Crossing The Valley - Koshigaya -",
-        "Track.03 Three Fragrances - Miyoshi -"
+        "Track.01 Morning Haze - 朝霞 -",
+        "Track.02 Crossing The Valley - 越谷 -",
+        "Track.03 Three Fragrances - 三芳 -"
       ],
       5: [
-        "Track.01 New Place - Niiza -",
-        "Track.02 Bracken - Warabi -",
+        "Track.01 New Place - 新座 -",
+        "Track.02 Bracken - 蕨 -",
         "Track.03 Gun Man Rock Full Heavy"
       ],
       6: [
-        "Track.01  Bear Village - Kumagaya -",
-        "Track.02 Grass Addition  - Soka -",
-        "Track.03 Narrow Mountain Tea  - Sayama-Cha -"
+        "Track.01  Bear Village - 熊谷 -",
+        "Track.02 Grass Addition  - 草加 -",
+        "Track.03 Narrow Mountain Tea  - 狭山茶 -"
       ]
     }
   };

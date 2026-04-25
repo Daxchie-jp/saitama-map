@@ -22,6 +22,23 @@
   const CATEGORY_IMAGES = catalog.categoryImages || {};
   const CATEGORY_TRACKS = catalog.categoryTracks || {};
   const CATEGORY_BY_CITY = buildCategoryMap(CATEGORY_DEFS);
+  const CITY_LABELS_JA = {
+    asaka: "朝霞",
+    chichibu: "秩父",
+    hanno: "飯能",
+    hidaka: "日高",
+    iruma: "入間",
+    kawagoe: "川越",
+    koshigaya: "越谷",
+    kumagaya: "熊谷",
+    miyoshi: "三芳",
+    niiza: "新座",
+    sayama: "狭山",
+    soka: "草加",
+    tokorozawa: "所沢",
+    tsurugashima: "鶴ヶ島",
+    warabi: "蕨"
+  };
 
   let mapRoot;
   let mapStage;
@@ -661,7 +678,8 @@
       modalCity.textContent = "";
     } else {
       modalCity.hidden = false;
-      modalCity.textContent = `対象: ${cities.join(" / ")}（クリック: ${cityId}）`;
+      const cityLabels = cities.map((city) => toJapaneseCityName(city));
+      modalCity.textContent = `対象: ${cityLabels.join(" / ")}（クリック: ${toJapaneseCityName(cityId)}）`;
     }
 
     const imagePath = CATEGORY_IMAGES[categoryId];
@@ -707,6 +725,11 @@
   function getCategoryIdByCity(cityId) {
     const normalized = CATEGORY_CITY_ALIASES[cityId] || cityId;
     return CATEGORY_BY_CITY[normalized] || null;
+  }
+
+  function toJapaneseCityName(cityId) {
+    const normalized = CATEGORY_CITY_ALIASES[cityId] || cityId;
+    return CITY_LABELS_JA[normalized] || normalized;
   }
 
   function ensureModal() {
